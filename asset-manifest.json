@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reddheeraj.github.io/portfolioweb/static/css/main.0ac05b3d.css",
-    "main.js": "/reddheeraj.github.io/portfolioweb/static/js/main.415a5a98.js",
-    "static/js/787.21d17fcb.chunk.js": "/reddheeraj.github.io/portfolioweb/static/js/787.21d17fcb.chunk.js",
-    "static/media/movierec.png": "/reddheeraj.github.io/portfolioweb/static/media/movierec.e3217d356b4f2e0f768b.png",
-    "static/media/chatapp.png": "/reddheeraj.github.io/portfolioweb/static/media/chatapp.b834e874ace1c96a114a.png",
-    "static/media/suge.png": "/reddheeraj.github.io/portfolioweb/static/media/suge.0de8587788e0e1611ef4.png",
-    "static/media/sortvis.png": "/reddheeraj.github.io/portfolioweb/static/media/sortvis.addad6d27ff1342dccb6.png",
-    "static/media/sentiment.png": "/reddheeraj.github.io/portfolioweb/static/media/sentiment.2dc703fc4ef83ce7f8df.png",
-    "index.html": "/reddheeraj.github.io/portfolioweb/index.html",
-    "main.0ac05b3d.css.map": "/reddheeraj.github.io/portfolioweb/static/css/main.0ac05b3d.css.map",
-    "main.415a5a98.js.map": "/reddheeraj.github.io/portfolioweb/static/js/main.415a5a98.js.map",
-    "787.21d17fcb.chunk.js.map": "/reddheeraj.github.io/portfolioweb/static/js/787.21d17fcb.chunk.js.map"
+    "main.css": "/portfolioweb/static/css/main.0ac05b3d.css",
+    "main.js": "/portfolioweb/static/js/main.a0536fd5.js",
+    "static/js/787.21d17fcb.chunk.js": "/portfolioweb/static/js/787.21d17fcb.chunk.js",
+    "static/media/movierec.png": "/portfolioweb/static/media/movierec.e3217d356b4f2e0f768b.png",
+    "static/media/chatapp.png": "/portfolioweb/static/media/chatapp.b834e874ace1c96a114a.png",
+    "static/media/suge.png": "/portfolioweb/static/media/suge.0de8587788e0e1611ef4.png",
+    "static/media/sortvis.png": "/portfolioweb/static/media/sortvis.addad6d27ff1342dccb6.png",
+    "static/media/sentiment.png": "/portfolioweb/static/media/sentiment.2dc703fc4ef83ce7f8df.png",
+    "index.html": "/portfolioweb/index.html",
+    "main.0ac05b3d.css.map": "/portfolioweb/static/css/main.0ac05b3d.css.map",
+    "main.a0536fd5.js.map": "/portfolioweb/static/js/main.a0536fd5.js.map",
+    "787.21d17fcb.chunk.js.map": "/portfolioweb/static/js/787.21d17fcb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ac05b3d.css",
-    "static/js/main.415a5a98.js"
+    "static/js/main.a0536fd5.js"
   ]
 }
