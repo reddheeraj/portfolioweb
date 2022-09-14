@@ -23,7 +23,7 @@ function Navbar() {
             </button>
         </div>
         <div className='links'>
-            <Link to='/'> <p>Home</p> </Link>
+            <Link to='/portfolioweb'> <p>Home</p> </Link>
             <Link to='/projects'> <p>Projects</p> </Link>
             <Link to='/experience'> <p>Experience</p> </Link>
             <Link to='/contact'> <p>Contact</p> </Link>
