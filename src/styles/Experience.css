@@ -1,0 +1,73 @@
+.experienceText {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.experience h4 {
+    color: #3e497a;
+}
+
+.experienceText h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
+    margin: 10;
+    padding: 10;
+    text-align: center;
+    color: #3e497a;
+}
+
+.tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech .techBox {
+    width: 10%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9d35b; 
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tech .techBox:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.techBox svg {
+    font-size: 50px;
+    margin: 5px 5px 5px 5px;
+    color: #21325e;
+}
+
+@media only screen and (max-width: 600px) {
+    .tech .techBox {
+        width: 30%;
+        height: 30%;
+        margin: 25px;
+        padding: 10px;
+    }
+}
+
+/* @media only screen and (min-width: 600px) {
+    .tech .techBox {
+        width: 10%;
+        height: 10%;
+        float: left;
+
+        margin: 20px;
+        padding: 25px;
+    }
+}  */
