@@ -339,8 +339,14 @@ ol {
 }
 
 .skills h1 {
-    color: #3e497a;
     margin: 10px;
+    font-size: 1.6em; 
+    font-weight: 400;
+}
+
+.skills h2 {
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 .skills .skillsList {
@@ -412,7 +418,4 @@ ol {
         padding: 0;
     }
 
-    .skills h1 {
-        font-size: 30px;
-    }
 }
