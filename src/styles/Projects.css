@@ -9,8 +9,15 @@
 
 .projects h1 {
     color: #3e497a;
+    font-weight: 400;
+    font-size: 2.5em;
 }
 
+/* .box1 {
+    background-color: pink;
+    width: 500px;
+    height: 500px;
+} */
 
 .projectList {
     width: 70vw;

@@ -15,6 +15,7 @@ function ProjectItem({ name, image, id }) {
   return (
     <div data-aos="fade-left" className='projectItem' onClick={() => {
         navigate(`/projects/${id}`)
+        window.scrollTo(0, 0)
     }}>
         <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
         <h1>{ name }</h1>

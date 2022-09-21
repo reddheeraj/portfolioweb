@@ -13,24 +13,28 @@ function ProjDisp() {
         <p> </p>
         <h1>{project.name}</h1>
         <img src={project.image} alt={project.name}/>
-        <p>
-        <b>Description: </b> {project.description}
-        </p>
-        <p>
-            <b>Tech used: </b> {project.tech}
-        </p>
-        <a href={project.github} target="_blank" rel="noreferrer">
-            <div className="github">
-            <GithubIcon />  
-            View on Github
-            </div>
-        </a>
-        <a href={project.live} target="_blank" rel="noreferrer">
-            <div className="live">
-            <CodeIcon />
-            View Live
-            </div>
-        </a>
+        <div className='descbox'>
+            <p>
+                <b>Description: </b> {project.description}
+            </p>
+            <p>
+                <b>Tech used: </b> {project.tech}
+            </p>
+        </div>
+        <div className="butlinks">
+            <a href={project.github} target="_blank" rel="noreferrer">
+                <button className="github">
+                    <GithubIcon />
+                    View on Github
+                </button>
+            </a>
+            <a href={project.live} target="_blank" rel="noreferrer">
+                <button className="live">
+                    <CodeIcon />
+                    View Live
+                </button>
+            </a>
+        </div>
     </div>
   )
 }

@@ -3,12 +3,11 @@ import ProjectItem from '../components/projectItem.js'
 import '../styles/Projects.css'
 import { projectList } from '../helpers/ProjectList.js'
 
-
 function Projects() {
 
   return (
-    <div className='projects'>
-      <p> </p>
+    <div className='projects' id="projects">
+      <br></br>
       <h1>My Personal Projects</h1>
       <div className='projectList'>
         {projectList.map((project, id) => {

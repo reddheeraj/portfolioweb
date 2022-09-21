@@ -1,0 +1,55 @@
+@media only screen and (max-width: 635px) {
+    .logo {
+        visibility: hidden;
+    }
+}
+
+.logo {
+    color: #f0f0f0;
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.logoText {
+    color: #e9d35b;
+}
+
+.logo {
+    /* animation: pulse 1s ease-in infinite; */
+    animation: brightness 2s ease-in infinite;
+}
+
+@keyframes brightness {
+    0% {
+        filter: brightness(100%);
+        transform: scale(1);
+    }
+    50% {
+        filter: brightness(150%);
+        transform: scale(1.1);
+    }
+    100% {
+        filter: brightness(100%);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1);
+    }
+    50% { 
+        transform: scale(1.1);
+    }
+    100% { 
+        transform: scale(1);
+    }
+}
+

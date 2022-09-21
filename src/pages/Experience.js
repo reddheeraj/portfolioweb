@@ -11,7 +11,10 @@ import { SiTensorflow, SiCplusplus } from 'react-icons/si';
 
 function Experience() {
   return (
-    <div className='experience'>
+    <div className='experience' id="experience">
+      <span>Experience</span>
+      <div className='thinbar'>
+      </div>
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement 
         className='vertical-timeline-element--education' 
@@ -19,12 +22,12 @@ function Experience() {
         iconStyle={{ background: '#3e497a', color: '#fff' }}
         icon={<SchoolIcon />}
         >
-          <h3 className='vertical-timeline-element-title'>
+          <h2 className='vertical-timeline-element-title'>
             Royal Concorde International School, Bangalore, India
-          </h3>
-          <h4 className='vertical-timeline-element-subtitle'>
+          </h2>
+          <h2 className='vertical-timeline-element-subtitle'>
             10th Grade
-          </h4>
+          </h2>
           <p>CBSE - 90.8%</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -33,12 +36,12 @@ function Experience() {
           iconStyle={{ background: '#3e497a', color: '#fff' }}
           icon={<SchoolIcon />}
         >
-          <h3 className='vertical-timeline-element-title'>
+          <h2 className='vertical-timeline-element-title'>
             Narayana PU College, Bangalore, India
-          </h3>
-          <h4 className='vertical-timeline-element-subtitle'>
+          </h2>
+          <h2 className='vertical-timeline-element-subtitle'>
             11th - 12th Grade
-          </h4>
+          </h2>
           <p>CBSE - 94.6%</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
@@ -47,11 +50,12 @@ function Experience() {
         iconStyle={{ background: '#3e497a', color: '#fff' }}
         icon={<SchoolIcon />}
         >
-          <h3 className='vertical-timeline-element-title'>
+          <h2 className='vertical-timeline-element-title'>
             Nitte Meenakshi Institute of Technology, Vishweshwaraya Technological University, Bangalore, India
-          </h3>
-          <h4 className='vertical-timeline-element-subtitle'>
-            Bachelor of Engineering</h4>
+          </h2>
+          <h2 className='vertical-timeline-element-subtitle'>
+            Bachelor of Engineering
+          </h2>
           <p>Information Science</p>
           <p className='vertical-timeline-element-subtitle'>Current CGPA: 9.6/10</p>
         </VerticalTimelineElement>
@@ -61,9 +65,9 @@ function Experience() {
         iconStyle={{ background: '#e9d35b', color: '#fff' }}
         icon={<WorkIcon />}
         >
-          <h3 className='vertical-timeline-element-title'>
+          <h2 className='vertical-timeline-element-title'>
             Freelancer 
-          </h3>
+          </h2>
           <ul>
             <li>Built Websites and projects using <b>MERN</b> stack</li>
             <li>Worked on a <b>Deep Learning</b> Project (OpenCV) with a fisheries company based in US</li>
@@ -71,6 +75,9 @@ function Experience() {
           </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className='experienceText'>
         <h2>Technologies I have worked with..</h2>
         <div className='tech'>

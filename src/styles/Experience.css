@@ -7,8 +7,13 @@
     text-align: center;
 }
 
-.experience h4 {
+.experience span {
+    font-size: 2.5em;
+}
+
+.experience h2 {
     color: #3e497a;
+    font-size: 1.3em;
 }
 
 .experienceText h2 {
@@ -30,8 +35,8 @@
 }
 
 .tech .techBox {
-    width: 10%;
-    height: 10%;
+    width: 9%;
+    height: 9%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,15 +64,20 @@
         margin: 25px;
         padding: 10px;
     }
+
+    .thinbar {
+        background-color: #3e497a;
+        width: 100%;
+        height: 5px;
+        border-radius: 10px;
+    }
 }
 
-/* @media only screen and (min-width: 600px) {
-    .tech .techBox {
-        width: 10%;
-        height: 10%;
-        float: left;
-
-        margin: 20px;
-        padding: 25px;
+@media only screen and (min-width: 600px) {
+    .thinbar {
+        background-color: #3e497a;
+        width: 90%;
+        height: 5px;
+        margin-left: 60px;
     }
-}  */
+} 

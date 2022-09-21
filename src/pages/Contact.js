@@ -1,10 +1,18 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import '../styles/Contact.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from '@emailjs/browser';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Contact() {
   const form = useRef();
+
+  useEffect(() => {
+    Aos.init({disable: 'mobile'});
+    Aos.init({duration: 2000});
+  }, []);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -18,7 +26,8 @@ function Contact() {
   }
 
   return (
-    <div className='container'>
+    <div className='scrolloutline' id='contact'>
+    <div className='container' data-aos="fade-up">
       <form onSubmit={sendEmail} ref={form}>
         <b> Get in Touch </b>
         <p> or </p>
@@ -41,6 +50,7 @@ function Contact() {
           </div>
         </div>
       </form>
+    </div>
     </div>
   )
 }
