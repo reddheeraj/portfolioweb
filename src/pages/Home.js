@@ -75,6 +75,15 @@ function Home() {
             </Suspense> 
           </Canvas>
         </div> 
+        {/* <div className="card">
+          <div className="contentcard">
+            <h2>01</h2>
+            <h3>Card One</h3>
+            <p>SOME TEXT HERE
+              SOME TEXT HERE
+            </p>
+          </div>
+        </div> */}
 
         {/* <h1>Hi, I'm {namearr.map((e) => {
           return <span className='name'>{e}</span>
