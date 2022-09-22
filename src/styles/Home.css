@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
 .name {
     font-size: 1.2em;
     font-weight: bold;
@@ -15,7 +17,7 @@
     border: none;
     font-size: 50px;
     font-weight: bold;
-    color:rgb(106, 202, 235);
+    color: #21325e;
     cursor: pointer;
     outline: none;
     width: 35px;
@@ -45,7 +47,7 @@
 .words span {
     font-size: 1.2em;
     font-weight: bold;
-    color: rgb(106, 202, 235);
+    color: #21325e;
     display: grid;
     place-items: center;
     animation: spin_words 6s infinite;
@@ -282,7 +284,7 @@
 .Home {
     text-align: center;
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     color: #3e497a;
 }
 
@@ -296,12 +298,12 @@
     align-items: center;
     text-align: center;
     background-color: #21325e;
-    background-image: url('../assets/mainbg.jpg');
+    background: linear-gradient(110deg, #219ebc 60%, #3e497a 60%);
     color: #f0f0f0;
 }
 
 .about h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
     color: #cac7c7;
     animation: slideup 2s ease-in-out forwards;
@@ -336,6 +338,7 @@ ol {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .skills h1 {
@@ -385,7 +388,7 @@ ol {
     }
 
     .about h1 {
-        margin-top: -50px;
+        margin-top: 50px;
         font-size: 40px;
         margin-left: 1px;
     }

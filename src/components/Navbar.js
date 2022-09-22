@@ -48,19 +48,6 @@ function Navbar() {
         }, 800);
     }
 
-    // const proj = document.querySelector('#projects');
-    // function sproj() {
-    //     proj.scrollIntoView({ behaviour: 'smooth', block: 'center' })
-    // }
-    // const exper = document.querySelector('#experience')
-    // function sxpr() {
-    //     exper.scrollIntoView({ behaviour: 'smooth', block: 'center' })
-    // }
-    // const contact = document.querySelector('#contact')
-    // function scon() {
-    //     contact.scrollIntoView({ behaviour: 'smooth', block: 'center' })
-    // }
-
   return (
     <div className="navbar" id={expandedbar ? "open" : "close"}>
         <div className='toggleButton'>
