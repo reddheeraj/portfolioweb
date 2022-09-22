@@ -202,6 +202,9 @@
     .buttons .rot:hover {
         animation: none;
     }
+    .about button {
+        width: 32px;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1020px) {
@@ -308,8 +311,7 @@
     color: #cac7c7;
     animation: slideup 2s ease-in-out forwards;
     margin-left: 20px;
-    margin-top: 0px;
-    
+    margin-top: 0px;;
 }
 
 .about .aboutText {
