@@ -45,6 +45,12 @@
     margin: 20px;
     padding: 20px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.tech .techIcon {
+    transform: translateZ(20px);
 }
 
 .tech .techBox:hover {

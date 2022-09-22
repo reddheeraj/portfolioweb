@@ -8,8 +8,19 @@ import { FaReact, FaPython } from 'react-icons/fa';
 import Box from '@material-ui/core/Box';
 import { DiJsBadge, DiBootstrap, DiGithubBadge, DiMongodb, DiNodejsSmall }from "react-icons/di";
 import { SiTensorflow, SiCplusplus } from 'react-icons/si';
+import vanillaTilt from 'vanilla-tilt';
 
 function Experience() {
+
+  React.useEffect(() => {
+    const boxes = document.querySelectorAll('.techBox');
+    vanillaTilt.init(boxes, {
+      max: 25,
+      speed: 400,
+      scale: 1.1,
+    });
+  }, []);
+
   return (
     <div className='experience' id="experience">
       <span>Experience</span>
@@ -82,31 +93,49 @@ function Experience() {
         <h2>Technologies I have worked with..</h2>
         <div className='tech'>
           <Box className='techBox'>
-            <FaReact />
+            <div className='techIcon'>
+              <FaReact />
+            </div>
           </Box>
           <Box className='techBox'>
-            <DiMongodb />
+            <div className='techIcon'>
+              <DiMongodb />
+            </div>
           </Box>
           <Box className='techBox'>
-            <DiNodejsSmall />
+            <div className='techIcon'>    
+              <DiNodejsSmall />
+            </div>
           </Box>
           <Box className='techBox'>
-            <DiJsBadge />
+            <div className='techIcon'>  
+              <DiJsBadge />
+            </div>
           </Box>
           <Box className='techBox'>
-            <FaPython />
+            <div className='techIcon'>
+              <FaPython />
+            </div>
           </Box>
           <Box className='techBox'>
-            <SiCplusplus />
+            <div className='techIcon'>
+              <SiCplusplus />
+            </div>
           </Box>
           <Box className='techBox'>
-            <DiBootstrap />
+            <div className='techIcon'>
+              <DiBootstrap />
+            </div>
           </Box>
           <Box className='techBox'>
-            <DiGithubBadge />
+            <div className='techIcon'>
+              <DiGithubBadge />
+            </div>
           </Box>
           <Box className='techBox'>
-            <SiTensorflow />
+            <div className='techIcon'>
+              <SiTensorflow />
+            </div>
           </Box>
 
         </div>
