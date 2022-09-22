@@ -75,16 +75,6 @@ function Home() {
             </Suspense> 
           </Canvas>
         </div> 
-        {/* <div className="card">
-          <div className="contentcard">
-            <h2>01</h2>
-            <h3>Card One</h3>
-            <p>SOME TEXT HERE
-              SOME TEXT HERE
-            </p>
-          </div>
-        </div> */}
-
         <div className='namemobile'>
           <h1>Hi, I'm {namearr.map((e) => {
             return <span className='name'>{e}</span>
@@ -115,50 +105,60 @@ function Home() {
             </a> */}
         </div>
       </div>
+      <br></br>
+      <br></br>
       <div className='skills'>
         <h1>Skills</h1>
-        <ol  className='skillsList'>
-          <div data-aos="fade-left">
-            <li className='item'>
-              <h2>Machine Learning</h2>
-              <span>
-                <p>Data modeling and evaluation</p>
-                <p>System design</p>
-                <p>ML libraries & algorithms</p>
-              </span>
-            </li>
+        <div  className='containers'>
+          <div data-aos="fade-up">
+              <div className="card">
+                <div className='contents'>
+                  <h2>01</h2>
+                  <h3>Machine Learning</h3>
+                  <p>Data Modeling and Evaluation</p>
+                  <p>Scikit-Learn, Pandas, Numpy, MatPlotLib</p>
+                  <p>ML Algorithms</p>
+                </div>
+              </div>
           </div>
-          <div data-aos="fade-right">
-            <li className='item'>
-              <h2>Deep Learning</h2>
-              <span>
-                <p>Neural networks</p>
+          <div data-aos="fade-up">
+            <div className="card">
+              <div className='contents'>
+                <h2>02</h2>
+                <h3>Deep Learning</h3>
+                <p>Tensorflow, Keras</p>
+                <p>Natural Language Processing</p>
+                <p>Neural Networks</p>
                 <p>Open CV</p>
-              </span>
-            </li>
+              </div>
+            </div>
           </div>
-          <div data-aos="fade-left">
-            <li className='item'>
-              <h2>Web Development</h2>
-              <span>
-                <p>HTML, CSS, JavaScript</p>
-                <p>MongoDB, Express.js, React, Node.js, </p>
-                <p>SQLite, Threejs</p>
+          <div data-aos="fade-up">
+            <div className="card">
+              <div className='contents'>
+                <h2>03</h2>
+                <h3>Web Development</h3>
+                <p>HTML, CSS3, JS</p>
+                <p>
+                  MongoDB, Express.js, React, Node.js
+                  SQLite, Threejs
+                </p>
                 <p>Material UI, Bootstrap</p>
-              </span>
-            </li>
+              </div>
+            </div>
           </div>
-          <div data-aos="fade-right">
-            <li className='item'>
-              <h2>Languages</h2>
-              <span>
+          <div data-aos="fade-up">
+            <div className="card">
+              <div className='contents4'>
+                <h2>04</h2>
+                <h3>Languages</h3>
                 <p>Python</p>
                 <p>C/C++</p>
                 <p>JavaScript</p>
-              </span>
-            </li>
+              </div>
+            </div>
           </div>
-        </ol>
+        </div>
       </div>
       <Projects />
       <br></br>
