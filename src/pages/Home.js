@@ -13,6 +13,7 @@ import Experience from './Experience';
 import Contact from './Contact';
 import { FaArrowCircleUp } from 'react-icons/fa';
 import Content from '../components/atoms';
+import vanillaTilt from 'vanilla-tilt';
 
 function Home() {
   const name = "Dheeraj";
@@ -32,6 +33,12 @@ function Home() {
     // window.scrollTo({ behavior: 'smooth', top: myRef.current.offsetTop })
     window.scrollTo(0,0)
   }
+
+  const cards = document.querySelectorAll('.card');
+  vanillaTilt.init(cards, {
+    max: 25,
+    speed: 400,
+  });
 
   return (
     <div className='Home' ref={myRef} id="home">
