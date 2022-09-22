@@ -15,8 +15,8 @@ import { FaArrowCircleUp } from 'react-icons/fa';
 import Content from '../components/atoms';
 
 function Home() {
-  // const name = "Dheeraj";
-  // const namearr = name.split("");
+  const name = "Dheeraj";
+  const namearr = name.split("");
   const skills = ["AI", "MERN Stack Developement", "Guitar", "Competitive Coding", "AI"]
 
   useEffect(() => {
@@ -85,15 +85,17 @@ function Home() {
           </div>
         </div> */}
 
-        {/* <h1>Hi, I'm {namearr.map((e) => {
-          return <span className='name'>{e}</span>
-        })}</h1> */}
-        {/* <div className='name'> */}
-          <h1>Hi, I'm
-            <button className='D'>D</button><button className='H'>H</button><button className='E'>E</button>
-            <button className='E'>E</button><button className='R'>R</button><button className='A'>A</button><button className='J'>J</button>
-          </h1>
-        {/* </div> */}
+        <div className='namemobile'>
+          <h1>Hi, I'm {namearr.map((e) => {
+            return <span className='name'>{e}</span>
+          })}</h1>
+        </div>
+          <div className='namereal'>
+            <h1>Hi, I'm
+              <button className='D'>D</button><button className='H'>H</button><button className='E'>E</button>
+              <button className='E'>E</button><button className='R'>R</button><button className='A'>A</button><button className='J'>J</button>
+            </h1>
+          </div>
         <div className='aboutText'>
           <p>A passionate Individual with knowledge in</p>
           <div className='words'>

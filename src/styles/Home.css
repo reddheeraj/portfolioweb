@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 .name {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: center;
     color: rgb(106, 202, 235);
@@ -207,30 +207,36 @@
     }
 }
 
+@media only screen and (min-width: 600px) {
+    .namemobile {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1020px) {
     .an {
-        width: 50%;
+        width: 60%;
         height: 80%;
-        left: 25%;
-        top: 18%;
+        left: 24%;
+        top: 15%;
     }
 }
 
 
 @media only screen and (min-width: 600px) and (max-width: 950px) {
     .an {
-        width: 60%;
+        width: 70%;
         height: 75%;
-        left: 22%;
-        top: 22%;
+        left: 18%;
+        top: 18%;
     }
 }
 
 @media only screen and (min-width: 1021px) and (max-width: 1200px) {
     .an {
-        width: 500px;
-        height: 500px;
-        left: 30%;
+        width: 75%;
+        height: 75%;
+        left: 15%;
         top: 16%;
     }
 }
@@ -262,6 +268,33 @@
         height: 50%;
         top: 170%;
         z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1250px) {
+    .an {
+        width: 60%;
+        height: 60%;
+        left: 21%;
+        top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1251px) and (max-width: 1629px) {
+    .an {
+        width: 60%;
+        height: 62%;
+        left: 21%;
+        top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1630px) and (max-width: 1830px) {
+    .an {
+        width: 60%;
+        height: 60%;
+        left: 21%;
+        top: 22%;
     }
 }
 
@@ -375,8 +408,12 @@ ol {
 }
 
 @media only screen and (max-width: 600px) {
-    .name {
+    .namemobile {
         font-size: 1.5em;
+    }
+
+    .namereal {
+        display: none;
     }
 
     .an {
