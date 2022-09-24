@@ -34,16 +34,16 @@ function Contact() {
         <p>just hit me up on social media</p>
         <div className='row pt-5 mx-auto'>
           <div className='col-10 form-group mx-auto'>
-            <input type='text' className='form-control' placeholder='Name' name='name' />
+            <input type='text' required className='form-control' placeholder='Name' name='name' />
           </div>
           <div className='col-10 form-group pt-2 mx-auto'>
-            <input type='email' className='form-control' placeholder='Email Address' name='email' />
+            <input pattern='[A-Za-z0-9._]+@[A-Za-z0-9]+\.[a-z]{2,}' title='must be a valid email address' required type='email' className='form-control' placeholder='Email Address' name='email' />
           </div>
           <div className='col-10 form-group pt-2 mx-auto'>
             <input type='text' className='form-control' placeholder='Subject' name='subject' />
           </div>
           <div className='col-10 form-group pt-2 mx-auto'>
-            <textarea className='form-control' id='' cols='30' rows='8' placeholder='Your message' name='message'></textarea> 
+            <textarea className='form-control' required id='' cols='30' rows='8' placeholder='Your message' name='message'></textarea> 
           </div>
           <div className='col-10 pt-3 mx-auto'>
             <input type='submit' className='butn' value='Send Message'></input>
