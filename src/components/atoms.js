@@ -11,7 +11,7 @@ function Atoms({ time, content, scale, color, ...props }) {
     <mesh {...props}>
         <Sphere scale={scale}>
             <meshToonMaterial 
-                roughness={0.8}
+                roughness={1}
                 color={color}
                 emissive={"red"}
                 emissiveIntensity={-0.3}
@@ -31,24 +31,24 @@ function Content() {
     useFrame(() => ( ref.current.rotation.y = ref.current.rotation.z += 0.01))
     return (
       <group ref={ref}>
-        <Atoms position={[2.15, -2.15, -2.15]} content={"JS"} scale={0.8} color={techskills} />
-        <Atoms position={[-2.15, -2.15, 2.15]} content={"Python"} scale={0.8} color={techskills} />
-        <Atoms position={[-2.15, 2.15, -2.15]} content={"C/C++"} scale={0.8} color={techskills} />
-        <Atoms position={[2.15, 2.15, 2.15]} content={"CSS3"} scale={0.8} color={techskills} />
-        <Atoms position={[0, 0, -2.15]} content={"HTML"} scale={0.8} color={techskills} />
-        <Atoms position={[0, 0, 2.15]} content={"ML"} scale={0.8} color={techskills} />
-        <Atoms position={[0, 2.15, 0]} content={"React"} scale={0.8} color={techskills} />
-        <Atoms position={[0, -2.15, 0]} content={"Git"} scale={0.8} color={techskills} />
+        <Atoms position={[2.15, -2.15, -2.15]} content={"JS"} scale={1} color={techskills} />
+        <Atoms position={[-2.15, -2.15, 2.15]} content={"Python"} scale={1} color={techskills} />
+        <Atoms position={[-2.15, 2.15, -2.15]} content={"C/C++"} scale={1} color={techskills} />
+        <Atoms position={[2.15, 2.15, 2.15]} content={"CSS3"} scale={1} color={techskills} />
+        <Atoms position={[0, 0, -2.15]} content={"HTML"} scale={1} color={techskills} />
+        <Atoms position={[0, 0, 2.15]} content={"ML"} scale={1} color={techskills} />
+        <Atoms position={[0, 2.15, 0]} content={"React"} scale={1} color={techskills} />
+        <Atoms position={[0, -2.15, 0]} content={"Git"} scale={1} color={techskills} />
         <Atoms position={[2.15, 0, 0]} content={"Bootstrap"} scale={1} color={techskills} />
-        <Atoms position={[-2.15, 0, 0]} content={"MERN"} scale={0.8} color={techskills} />
+        <Atoms position={[-2.15, 0, 0]} content={"MERN"} scale={1} color={techskills} />
         <Atoms position={[-2.15, 2.15, 2.15]} content={"Active Listener"} scale={1}  color={softskills} />
         <Atoms position={[2.15, 2.15, -2.15]} content={"Team Work"} scale={1}  color={softskills} />
         <Atoms position={[2.15, -2.15, 2.15]} content={"Fast Learner"} scale={1}  color={softskills} />
         <Atoms position={[-2.15, -2.15, -2.15]} content={"Algorithms"} scale={1}  color={softskills} />
-        <Atoms position={[0, -2.15, 2.15]} content={"Anime"} scale={0.8}  color={oth} />
-        <Atoms position={[0, 2.15, 2.15]} content={"Web Series"} scale={0.8}  color={oth} />
-        <Atoms position={[0, 2.15, -2.15]} content={"Video Games"} scale={0.8}  color={oth} />
-        <Atoms position={[0, -2.15, -2.15]} content={"Witcher 3"} scale={0.8}  color={oth} />
+        <Atoms position={[0, -2.15, 2.15]} content={"Anime"} scale={1}  color={oth} />
+        <Atoms position={[0, 2.15, 2.15]} content={"Web Series"} scale={1}  color={oth} />
+        <Atoms position={[0, 2.15, -2.15]} content={"Video Games"} scale={1}  color={oth} />
+        <Atoms position={[0, -2.15, -2.15]} content={"Witcher 3"} scale={1}  color={oth} />
       </group>
     )
   }

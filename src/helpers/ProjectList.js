@@ -3,15 +3,24 @@ import movierec from '../assets/movierec.png'
 import sentiment from '../assets/sentiment.png'
 import chatapp from '../assets/chatapp.png'
 import suge from '../assets/suge.png'
+import pathvis from '../assets/pathvis.png'
 
 export const projectList = [
     {
         name: "Sorting Visualizer",
         image: sortvis,
-        description: "A web app that visualizes the sorting algorithms of your choice.",
+        description: "A web app that visualizes different sorting algorithms.",
         tech: "React, JavaScript, CSS",
         github: "https://github.com/reddheeraj/SortingVisualizer",
         live: "https://reddheeraj.github.io/SortingVisualizer/"
+    },
+    {
+        name: "Pathfinding Visualizer",
+        image: pathvis,
+        description: "A web app that visualizes different Pathfinding algorithms.",
+        tech: "React, JavaScript, CSS",
+        github: "https://github.com/reddheeraj/Pathfinding-Visualizer",
+        live: "https://reddheeraj.github.io/Pathfinding-Visualizer/"
     },
     {
         name: "Movie Recommender",
