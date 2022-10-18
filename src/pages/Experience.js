@@ -81,7 +81,7 @@ function Experience() {
           </h2>
           <ul>
             <li>Built Websites and projects using <b>MERN</b> stack</li>
-            <li>Worked on a <b>Deep Learning</b> Project (OpenCV) with a fisheries company based in US</li>
+            <li>Worked on a <b>Computer Vision</b> real-world problem with a Research Institution based in US</li>
             <li>Originated and Built <b>Discord Bots</b></li>
           </ul>
         </VerticalTimelineElement>
