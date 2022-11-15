@@ -85,6 +85,23 @@ function Experience() {
             <li>Originated and Built <b>Discord Bots</b></li>
           </ul>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className='vertical-timeline-element--work'
+        date='August 2022 - October 2022'
+        iconStyle={{ background: '#e9d35b', color: '#fff' }}
+        icon={<WorkIcon />}
+        >
+          <h2 className='vertical-timeline-element-title'>
+            VentraGate Technologies 
+          </h2>
+          <p>
+            <b>Data Science Intern</b>
+          </p>
+          <ul>
+          <li> Designed, built and incorporated code in Python to help with services provided to customers.</li>
+          <li>Collaborated with Data team in developing solutions to improve customer experience and to guide business decision making.</li>
+          </ul>
+        </VerticalTimelineElement>
       </VerticalTimeline>
       <br></br>
       <br></br>
