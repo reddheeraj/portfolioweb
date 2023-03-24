@@ -68,7 +68,7 @@ function Experience() {
             Bachelor of Engineering
           </h2>
           <p>Information Science</p>
-          <p className='vertical-timeline-element-subtitle'>Current CGPA: 9.6/10</p>
+          <p className='vertical-timeline-element-subtitle'>Current CGPA: 9.4/10</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
         className='vertical-timeline-element--work'
