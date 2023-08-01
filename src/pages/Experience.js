@@ -72,7 +72,7 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
         className='vertical-timeline-element--work'
-        date='October 2021 - Present'
+        date='October 2021 - January 2023'
         iconStyle={{ background: '#e9d35b', color: '#fff' }}
         icon={<WorkIcon />}
         >
@@ -100,6 +100,22 @@ function Experience() {
           <ul>
           <li> Designed, built and incorporated code in Python to help with services provided to customers.</li>
           <li>Collaborated with Data team in developing solutions to improve customer experience and to guide business decision making.</li>
+          </ul>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className='vertical-timeline-element--work'
+        date='August 2023 - Present'
+        iconStyle={{ background: '#e9d35b', color: '#fff' }}
+        icon={<WorkIcon />}
+        >
+          <h2 className='vertical-timeline-element-title'>
+            Mahindra Group 
+          </h2>
+          <p>
+            <b>Data Science Intern</b>
+          </p>
+          <ul>
+          <li> Just started working here, will update soon!</li>
           </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
