@@ -4,11 +4,12 @@ import sentiment from '../assets/sentiment.png'
 import chatapp from '../assets/chatapp.png'
 import suge from '../assets/suge.png'
 import pathvis from '../assets/pathvis.png'
+import geneticalgo from '../assets/geneticalgo.png'
 
 export const projectList = [
     {
         name: "Genetic Algorithm Simulator",
-        image: sortvis,
+        image: geneticalgo,
         description: "Building a web app for the genetic algorithm model I built, to simulate the evolution of a population of creatures.",
         tech: "Python, pygame",
         github: "https://github.com/reddheeraj/GeneticAlgo",
