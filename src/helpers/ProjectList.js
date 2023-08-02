@@ -7,6 +7,14 @@ import pathvis from '../assets/pathvis.png'
 
 export const projectList = [
     {
+        name: "Genetic Algorithm Simulator",
+        image: sortvis,
+        description: "Building a web app for the genetic algorithm model I built, to simulate the evolution of a population of creatures.",
+        tech: "Python, pygame",
+        github: "https://github.com/reddheeraj/GeneticAlgo",
+        live: "https://github.com/reddheeraj/GeneticAlgo"
+    },
+    {
         name: "Sorting Visualizer",
         image: sortvis,
         description: "A web app that visualizes different sorting algorithms.",
