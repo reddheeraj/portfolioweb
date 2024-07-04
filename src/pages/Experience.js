@@ -23,42 +23,13 @@ function Experience() {
 
   return (
     <div className='experience' id="experience">
-      <span>Experience</span>
       <div className='thinbar'>
       </div>
-      <VerticalTimeline lineColor="#3e497a">
-        <VerticalTimelineElement 
-        className='vertical-timeline-element--education' 
-        date='2017-2018'
-        iconStyle={{ background: '#3e497a', color: '#fff' }}
-        icon={<SchoolIcon />}
-        >
-          <h2 className='vertical-timeline-element-title'>
-            Royal Concorde International School, Bangalore, India
-          </h2>
-          <h2 className='vertical-timeline-element-subtitle'>
-            10th Grade
-          </h2>
-          <p>CBSE - 90.8%</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className='vertical-timeline-element--education'
-          date='2018-2020'
-          iconStyle={{ background: '#3e497a', color: '#fff' }}
-          icon={<SchoolIcon />}
-        >
-          <h2 className='vertical-timeline-element-title'>
-            Narayana PU College, Bangalore, India
-          </h2>
-          <h2 className='vertical-timeline-element-subtitle'>
-            11th - 12th Grade
-          </h2>
-          <p>CBSE - 94.6%</p>
-        </VerticalTimelineElement>
+      <VerticalTimeline lineColor="#000">
         <VerticalTimelineElement 
         className='vertical-timeline-element--education'
-        date='2020-2024'
-        iconStyle={{ background: '#3e497a', color: '#fff' }}
+        date='December 2020 - May 2024'
+        iconStyle={{ background: '#000', color: '#fff' }}
         icon={<SchoolIcon />}
         >
           <h2 className='vertical-timeline-element-title'>
@@ -68,27 +39,27 @@ function Experience() {
             Bachelor of Engineering
           </h2>
           <p>Information Science</p>
-          <p className='vertical-timeline-element-subtitle'>Current CGPA: 9.4/10</p>
+          <p className='vertical-timeline-element-subtitle'>GPA: 9.22/10</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
         className='vertical-timeline-element--work'
         date='October 2021 - January 2023'
-        iconStyle={{ background: '#e9d35b', color: '#fff' }}
+        iconStyle={{ background: '#000', color: '#fff' }}
         icon={<WorkIcon />}
         >
           <h2 className='vertical-timeline-element-title'>
             Freelancer 
           </h2>
           <ul>
-            <li>Built Websites and projects using <b>MERN</b> stack</li>
-            <li>Worked on a <b>Computer Vision</b> real-world problem with a Research Institution based in US</li>
+            <li>Designed and Developed Websites and projects using <b>MERN</b> stack</li>
+            <li>Used <b>Computer Vision</b> to solve a real-world problem for a fisheries company based in US</li>
             <li>Originated and Built <b>Discord Bots</b></li>
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement
         className='vertical-timeline-element--work'
         date='August 2022 - October 2022'
-        iconStyle={{ background: '#e9d35b', color: '#fff' }}
+        iconStyle={{ background: '#000', color: '#fff' }}
         icon={<WorkIcon />}
         >
           <h2 className='vertical-timeline-element-title'>
@@ -98,33 +69,56 @@ function Experience() {
             <b>Data Science Intern</b>
           </p>
           <ul>
-          <li> Designed, built and incorporated code in Python to help with services provided to customers.</li>
+          <li> Wrote a pipeline in python to automate video processing and object detection, reducing the initial processing time by <b>50%</b>.</li>
           <li>Collaborated with Data team in developing solutions to improve customer experience and to guide business decision making.</li>
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement
         className='vertical-timeline-element--work'
-        date='August 2023 - Present'
-        iconStyle={{ background: '#e9d35b', color: '#fff' }}
+        date='August 2023 - May 2024'
+        iconStyle={{ background: '#000', color: '#fff' }}
         icon={<WorkIcon />}
         >
           <h2 className='vertical-timeline-element-title'>
-            Mahindra Group 
+            Mahindra Group, Group Technology Office 
           </h2>
           <p>
-            <b>Data Science Intern</b>
+            <b>Data Scientist, Intern</b>
           </p>
           <ul>
-          <li> Just started working here, will update soon!</li>
+          <li>Spearheaded POCs for various projects, and materialized them to the production phase (now used by 100+ employees in client companies).</li>
+          <li> Revived and steered <b>call center analytics</b> product development into production, enhancing <b>audio call processing with NLP</b> and delivering tailored insights via dynamic dashboards built using Streamlit on the front.</li>
+          <li> Contributed to various phases of <b>range analysis</b> for Mahindra EV vehicle series, ensuring comprehensive assessment.</li>
+          <li> Collaborated on the improvement of an internal <b>data quality tool</b>, streamlining report generation for automated data quality analysis.</li>
           </ul>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement 
+        className='vertical-timeline-element--education'
+        date='August 2024 - Dec 2025'
+        iconStyle={{ background: '#000', color: '#fff' }}
+        icon={<SchoolIcon />}
+        >
+          <h2 className='vertical-timeline-element-title'>
+            Texas A&M University, Texas, USA
+          </h2>
+          <h2 className='vertical-timeline-element-subtitle'>
+            Master of Science
+          </h2>
+          <p>Data Science</p>
+          <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
       </VerticalTimeline>
       <br></br>
       <br></br>
       <br></br>
-      <div className='experienceText'>
+      {/* <div className='experienceText'>
         <h2>Technologies I have worked with..</h2>
         <div className='tech'>
+          <Box className='techBox'>
+            <div className='techIcon'>
+              <FaPython />
+            </div>
+          </Box>
           <Box className='techBox'>
             <div className='techIcon'>
               <FaReact />
@@ -145,11 +139,7 @@ function Experience() {
               <DiJsBadge />
             </div>
           </Box>
-          <Box className='techBox'>
-            <div className='techIcon'>
-              <FaPython />
-            </div>
-          </Box>
+          
           <Box className='techBox'>
             <div className='techIcon'>
               <SiCplusplus />
@@ -172,7 +162,7 @@ function Experience() {
           </Box>
 
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -46,7 +46,7 @@ function Contact() {
             <textarea className='form-control' required id='' cols='30' rows='8' placeholder='Your message' name='message'></textarea> 
           </div>
           <div className='col-10 pt-3 mx-auto'>
-            <input type='submit' className='butn' value='Send Message'></input>
+            <input type='submit' className='butn' value='Send Message' color='#000'></input>
           </div>
         </div>
       </form>

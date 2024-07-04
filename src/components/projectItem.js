@@ -8,14 +8,14 @@ function ProjectItem({ name, image, id }) {
 
     useEffect(() => {
       Aos.init({disable: 'mobile'});
-        Aos.init({duration: 2000});
+        Aos.init({duration: 1000});
     }, []);
 
 
   return (
-    <div data-aos="fade-left" className='projectItem' onClick={() => {
-        navigate(`/projects/${id}`)
-        window.scrollTo(0, 0)
+    <div data-aos="fade-up" className='projectItem' onClick={() => {
+        // navigate(`/projects/${id}`)
+        // window.scrollTo(0, 0)
     }}>
         <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
         <h1>{ name }</h1>

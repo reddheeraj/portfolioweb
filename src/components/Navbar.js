@@ -16,23 +16,7 @@ function Navbar() {
         setExpandedbar(false); 
     }, [location]);
 
-    function locationpath() {
-        if (location.pathname === "/projects/0") {
-            navigate('/portfolioweb')
-        }
-        else if (location.pathname === "/projects/1") {
-            navigate('/portfolioweb')
-        }
-        else if (location.pathname === "/projects/2") {
-            navigate('/portfolioweb')
-        }
-        else if (location.pathname === "/projects/3") {
-            navigate('/portfolioweb')
-        }
-        else if (location.pathname === "/projects/4") {
-            navigate('/portfolioweb')
-        }
-    }  
+   
 
     function changeID() {
         let navbar = document.getElementsByClassName('navbar');
@@ -63,12 +47,11 @@ function Navbar() {
             </button>
         </div>
         <div className='links'>
-            <Logo />
+            {/* <Logo /> */}
             <Link to='home'> 
-                {/* <p><FaHome size="30px" /></p>*/}
                 <div style={{"cursor":"pointer"}} onClick={() => {
                     changeID()
-                    locationpath()
+                    navigate('/portfolioweb')
                     }}> 
                     <p>HOME</p>
                 </div>
@@ -77,7 +60,7 @@ function Navbar() {
                 {/* <p><FaProjectDiagram size="30px"/></p>  */}
                  <div style={{"cursor":"pointer"}} onClick={() => {
                     changeID()
-                    locationpath()
+                    navigate('/projects')
                     }}>
                     <p>PROJECTS</p>
                 </div>
@@ -86,7 +69,7 @@ function Navbar() {
                 {/* <p><FaBriefcase size="30px"/></p> */}
                 <div style={{"cursor":"pointer"}} onClick={() => {
                     changeID()
-                    locationpath()
+                    navigate('/experience')
                     }}>
                     <p>EXPERIENCE</p>
                 </div>
@@ -95,7 +78,7 @@ function Navbar() {
                 {/* <p><FaEnvelope size="30px" /></p> */}
                 <div style={{"cursor":"pointer"}} onClick={() => {
                     changeID()
-                    locationpath()
+                    navigate('/contact')
                     }}>
                     <p>CONTACT ME</p>
                 </div>
