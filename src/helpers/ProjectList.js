@@ -5,8 +5,17 @@ import chatapp from '../assets/chatapp.png'
 import suge from '../assets/suge.png'
 import pathvis from '../assets/pathvis.png'
 import geneticalgo from '../assets/geneticalgo.png'
+import lorebubbl from '../assets/lorebubbl.png'
 
 export const projectList = [
+    {
+        name: "LoreBubbl",
+        image: lorebubbl,
+        description: "LoreBubbl uses AI to support people with short attention spans by giving contextual awareness and knowledge while reading any book. You just have to highlight the text and ask for context. I built a RAG system inspired by Anthropic's contextual retrieval mechanism. We integrated it with an LLM (LLama 3 70b versatile) for accurate RAG solutions. Flutter was used for frontend, and flask was used to manage the APIs in the backend. ",
+        tech: "Python, AWS, Flutter, Flask",
+        github: "https://github.com/reddheeraj/Text-Referencer",
+        live: "https://devpost.com/software/lorebubbl"
+    },
     {
         name: "Genetic Algorithm Simulator",
         image: geneticalgo,
