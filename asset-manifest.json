@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioweb/static/css/main.e9567d50.css",
-    "main.js": "/portfolioweb/static/js/main.ad802b1b.js",
+    "main.js": "/portfolioweb/static/js/main.8646a050.js",
     "static/js/787.2af39c6f.chunk.js": "/portfolioweb/static/js/787.2af39c6f.chunk.js",
     "static/media/geneticalgo.png": "/portfolioweb/static/media/geneticalgo.624c544a4c470b779c80.png",
     "static/media/movierec.png": "/portfolioweb/static/media/movierec.e3217d356b4f2e0f768b.png",
@@ -9,15 +9,16 @@
     "static/media/chatapp.png": "/portfolioweb/static/media/chatapp.b834e874ace1c96a114a.png",
     "static/media/suge.png": "/portfolioweb/static/media/suge.0de8587788e0e1611ef4.png",
     "static/media/sortvis.png": "/portfolioweb/static/media/sortvis.9b747c6b97a1acf1b718.png",
+    "static/media/lorebubbl.png": "/portfolioweb/static/media/lorebubbl.a2bbc77b19e4b0cc10a2.png",
     "static/media/sentiment.png": "/portfolioweb/static/media/sentiment.2dc703fc4ef83ce7f8df.png",
     "static/media/Dnew.png": "/portfolioweb/static/media/Dnew.b2f51d7389f980ae2ad1.png",
     "index.html": "/portfolioweb/index.html",
     "main.e9567d50.css.map": "/portfolioweb/static/css/main.e9567d50.css.map",
-    "main.ad802b1b.js.map": "/portfolioweb/static/js/main.ad802b1b.js.map",
+    "main.8646a050.js.map": "/portfolioweb/static/js/main.8646a050.js.map",
     "787.2af39c6f.chunk.js.map": "/portfolioweb/static/js/787.2af39c6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9567d50.css",
-    "static/js/main.ad802b1b.js"
+    "static/js/main.8646a050.js"
   ]
 }
