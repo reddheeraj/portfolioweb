@@ -109,7 +109,7 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement 
         className='vertical-timeline-element--education'
-        date='October 2024 - present'
+        date='October 2024 - December 2024'
         iconStyle={{ background: '#000', color: '#fff' }}
         icon={<WorkIcon />}
         >
@@ -117,7 +117,20 @@ function Experience() {
             College of Performance, Visualization and Fine Arts, Texas A&M University, Texas, USA
           </h2>
           <p>Student Research Assistant </p>
-          <p>Working with Prof. Jian Tao and team at the Digital Twin Lab to build a Human Digital Twin, trying to replicate organs, cognition and physicality of a human.</p>
+          <p>Working with Prof. Jian Tao and team at the Digital Twin Lab on various LLMs & agentic RAG applications.</p>
+          <p className='vertical-timeline-element-subtitle'></p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement 
+        className='vertical-timeline-element--education'
+        date='December 2024 - present'
+        iconStyle={{ background: '#000', color: '#fff' }}
+        icon={<WorkIcon />}
+        >
+          <h2 className='vertical-timeline-element-title'>
+            College of Performance, Visualization and Fine Arts, Texas A&M University, Texas, USA
+          </h2>
+          <p>Graduate Assistant Researcher</p>
+          <p></p>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
       </VerticalTimeline>
