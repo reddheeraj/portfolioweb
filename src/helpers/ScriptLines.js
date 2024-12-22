@@ -45,7 +45,7 @@ const CanvasAnimation = () => {
                 yOff += window.innerHeight / 2 - .72 * txtHeight / 2 + txtHeight / 2;
             }
 
-            ctx.strokeStyle = "#ececec";
+            ctx.strokeStyle = "#D6CFC7";
             ctx.lineWidth = 3;
 
             var x = 1.4;

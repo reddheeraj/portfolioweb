@@ -31,7 +31,7 @@ function Contact() {
       <form onSubmit={sendEmail} ref={form}>
         <b> Get in Touch </b>
         <p> or </p>
-        <p>just hit me up on social media</p>
+        <p>reach out to me via social media</p>
         <div className='row pt-5 mx-auto'>
           <div className='col-10 form-group mx-auto'>
             <input type='text' required className='form-control' placeholder='Name' name='name' />

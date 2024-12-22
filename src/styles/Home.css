@@ -7,7 +7,7 @@
 
 .name {
     font-size: 4em; /* Reduced font size to make it more flexible */
-    color: #000000;
+    color: #2363d1;
     font-weight: 200;
     position: absolute;
     top: 50%;
@@ -20,6 +20,19 @@
     justify-content: center;
     text-align: center; /* Ensure text is centered */
     padding: 0 20px; /* Add padding for small screens */
+    animation: hover_up_and_down 1.5s infinite;
+}
+
+@keyframes hover_up_and_down {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -54%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
 }
 
 .my_links {

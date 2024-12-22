@@ -22,11 +22,11 @@ function Home() {
     Aos.init({disable: 'mobile'});
     // Aos.init({duration: 2000});
     const cards = document.querySelectorAll('.card');
-    vanillaTilt.init(cards, {
-      max: 25,
-      speed: 400,
-      scale: 1.1,
-    });
+    // vanillaTilt.init(cards, {
+    //   max: 25,
+    //   speed: 400,
+    //   scale: 1.1,
+    // });
   }, []);
 
   //const titleRef = useRef();

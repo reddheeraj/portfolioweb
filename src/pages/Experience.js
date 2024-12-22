@@ -86,10 +86,10 @@ function Experience() {
             <b>Data Scientist, Intern</b>
           </p>
           <ul>
-          <li>Spearheaded POCs for various projects, and materialized them to the production phase (now used by 100+ employees in client companies).</li>
-          <li> Revived and steered <b>call center analytics</b> product development into production, enhancing <b>audio call processing with NLP</b> and delivering tailored insights via dynamic dashboards built using Streamlit on the front.</li>
-          <li> Contributed to various phases of <b>range analysis</b> for Mahindra EV vehicle series, ensuring comprehensive assessment.</li>
-          <li> Collaborated on the improvement of an internal <b>data quality tool</b>, streamlining report generation for automated data quality analysis.</li>
+          <li> Enhanced customer retention for 5+ clients by developing an NLP based <b>Call Analytics System</b> with automated speech processing, summarization of calls, call location analytics, agent analytics. . </li>
+          <li> Worked on multiple projects with <b>Mahindra Research Valley</b>, focused on automobile engine data extraction, storage, CRUD and analytics. </li>
+          <li> Worked with <b>Mahindra EV</b> to enhance energy efficiency & customer retention strategy by performing <b>SQL-based data extraction</b> and <b>A/B testing</b> on drive modes. </li>
+          <li> Accelerated vehicle inspection and repair processing for 4+ clients by launching an <b>AI-based damage detection system </b>using Vision Transformers that identifies repairs and necessary parts, eliminating appointment delays.</li>
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
@@ -117,7 +117,7 @@ function Experience() {
             College of Performance, Visualization and Fine Arts, Texas A&M University, Texas, USA
           </h2>
           <p>Student Research Assistant </p>
-          <p>Working with Prof. Jian Tao and team at the Digital Twin Lab on various LLMs & agentic RAG applications.</p>
+          <i>Working with Prof. Jian Tao and team at the Digital Twin Lab on various LLMs & agentic RAG applications.</i>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
