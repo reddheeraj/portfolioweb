@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/portfolioweb/static/css/main.c68bb9c4.css",
-    "main.js": "/portfolioweb/static/js/main.ecb68165.js",
+    "main.js": "/portfolioweb/static/js/main.285aae3b.js",
     "static/js/787.2af39c6f.chunk.js": "/portfolioweb/static/js/787.2af39c6f.chunk.js",
     "static/media/geneticalgo.png": "/portfolioweb/static/media/geneticalgo.624c544a4c470b779c80.png",
     "static/media/movierec.png": "/portfolioweb/static/media/movierec.e3217d356b4f2e0f768b.png",
+    "static/media/architecture.png": "/portfolioweb/static/media/architecture.c01788f3e84f48f82c83.png",
+    "static/media/statefulagent.png": "/portfolioweb/static/media/statefulagent.6b3ac5ab7ba8e78a1e6f.png",
     "static/media/pathvis.png": "/portfolioweb/static/media/pathvis.bf576123696a1d708e37.png",
     "static/media/chatapp.png": "/portfolioweb/static/media/chatapp.b834e874ace1c96a114a.png",
     "static/media/suge.png": "/portfolioweb/static/media/suge.0de8587788e0e1611ef4.png",
@@ -14,11 +16,11 @@
     "static/media/Dnew.png": "/portfolioweb/static/media/Dnew.b2f51d7389f980ae2ad1.png",
     "index.html": "/portfolioweb/index.html",
     "main.c68bb9c4.css.map": "/portfolioweb/static/css/main.c68bb9c4.css.map",
-    "main.ecb68165.js.map": "/portfolioweb/static/js/main.ecb68165.js.map",
+    "main.285aae3b.js.map": "/portfolioweb/static/js/main.285aae3b.js.map",
     "787.2af39c6f.chunk.js.map": "/portfolioweb/static/js/787.2af39c6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c68bb9c4.css",
-    "static/js/main.ecb68165.js"
+    "static/js/main.285aae3b.js"
   ]
 }
