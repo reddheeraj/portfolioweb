@@ -86,10 +86,7 @@ function Experience() {
             <b>Data Scientist, Intern</b>
           </p>
           <ul>
-          <li> Enhanced customer retention for 5+ clients by developing an NLP based <b>Call Analytics System</b> with automated speech processing, summarization of calls, call location analytics, agent analytics. . </li>
-          <li> Worked on multiple projects with <b>Mahindra Research Valley</b>, focused on automobile engine data extraction, storage, CRUD and analytics. </li>
-          <li> Worked with <b>Mahindra EV</b> to enhance energy efficiency & customer retention strategy by performing <b>SQL-based data extraction</b> and <b>A/B testing</b> on drive modes. </li>
-          <li> Accelerated vehicle inspection and repair processing for 4+ clients by launching an <b>AI-based damage detection system </b>using Vision Transformers that identifies repairs and necessary parts, eliminating appointment delays.</li>
+          <li> Brought in business worth $170k and generated business worth $700k using my skills in Data Science, ML and product development. </li>
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
@@ -130,7 +127,7 @@ function Experience() {
             College of Performance, Visualization and Fine Arts, Texas A&M University, Texas, USA
           </h2>
           <p>Graduate Assistant Researcher</p>
-          <p></p>
+          <i>Working on multiple funded projects.</i>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
       </VerticalTimeline>

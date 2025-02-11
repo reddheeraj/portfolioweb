@@ -6,12 +6,28 @@ import suge from '../assets/suge.png'
 import pathvis from '../assets/pathvis.png'
 import geneticalgo from '../assets/geneticalgo.png'
 import lorebubbl from '../assets/lorebubbl.png'
+import architecture from '../assets/architecture.png'
+import statefulagent from '../assets/statefulagent.png'
 
 export const projectList = [
     {
+        name: "Stateful Agent",
+        image: statefulagent,
+        description: "An agent that learns as it interacts with you and the environment. It has a memory of its own which helps it to learn and adapt to the user's preferences.",
+        tech: "Python, Ollama",
+        github: "https://github.com/reddheeraj/Stateful_Agent"
+    },
+    {
+        name: "NimbusNews",
+        image: architecture,
+        description: "Turn raw meteorological charts into broadcast-ready video reports with one click. Automate the weatherman and empower researchers. This project is a Winner at TAMU HACK 2025.",
+        tech: "Python, AWS S3 & Bedrock, Llama 3.2 90B Vision, Cloudflare, Flask",
+        github: "https://github.com/reddheeraj/WeatherMan"
+    },
+    {
         name: "LoreBubbl",
         image: lorebubbl,
-        description: "LoreBubbl uses AI to support people with short attention spans by giving contextual awareness and knowledge while reading any book. You just have to highlight the text and ask for context. I built a RAG system inspired by Anthropic's contextual retrieval mechanism. We integrated it with an LLM (LLama 3 70b versatile) for accurate RAG solutions. Flutter was used for frontend, and flask was used to manage the APIs in the backend. ",
+        description: "LoreBubbl uses AI to support people with short attention spans by giving contextual awareness and knowledge while reading any book. You just have to highlight the text and ask for context. I built a RAG system inspired by Anthropic's contextual retrieval mechanism. We integrated it with an LLM (LLama 3 70b versatile) for accurate RAG solutions. Flutter was used for frontend, and flask was used to manage the APIs in the backend. This project is a Winner at TIDAL HACK 2024.",
         tech: "Python, AWS, Flutter, Flask",
         github: "https://github.com/reddheeraj/Text-Referencer",
         live: "https://devpost.com/software/lorebubbl"

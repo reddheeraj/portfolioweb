@@ -7,128 +7,128 @@ import '../styles/Home.css';
 import { motion as m } from 'framer-motion';
 
 const CanvasAnimation = () => {
-    const canvasRef = useRef(null);
-    const nameRef = useRef(null);
-    let loop;
+  const canvasRef = useRef(null);
+  const nameRef = useRef(null);
+  let animationFrameId;
 
-    useEffect(() => {
-        const canvas = canvasRef.current;
-        const ctx = canvas.getContext('2d');
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
 
-        const scale = window.devicePixelRatio;
-        ctx.scale(scale, scale);
+    const scale = window.devicePixelRatio;
+    ctx.scale(scale, scale);
 
-        canvas.width = window.innerWidth * 2.5;
-        canvas.height = window.innerHeight * 2.5;
-        canvas.style.width = window.innerWidth + "px";
-        canvas.style.height = window.innerHeight-100 + "px";
+    canvas.width = window.innerWidth * 2.5;
+    canvas.height = window.innerHeight * 2.5;
+    canvas.style.width = window.innerWidth + "px";
+    canvas.style.height = (window.innerHeight - 100) + "px";
 
-        const draw = () => {
-            const nameElement = nameRef.current;
-            if (!nameElement) {
-                return;
-            }
+    // Precompute constants for conversion functions
+    const PI2 = 2 * Math.PI;
+    const angle120 = (120 * Math.PI) / 180;
+    const cos120 = Math.cos(angle120);
+    const sin120 = Math.sin(angle120);
+    const cosNeg120 = Math.cos(-angle120);
+    const sinNeg120 = Math.sin(-angle120);
 
-            var txtWidth = window.getComputedStyle(nameElement).getPropertyValue("width");
-            var txtHeight = window.getComputedStyle(nameElement).getPropertyValue("height");
-            txtWidth = txtWidth.substring(0, txtWidth.length - 2) / 14;
-            txtHeight = txtHeight.substring(0, txtHeight.length - 2);
+    const toisou = (lx, ly, lz) => {
+      return lx * Math.cos(PI2) + ly * cos120 + lz * cosNeg120;
+    };
 
-            var xOff = -1.4 * ctx.canvas.width / 20;
-            var yOff = (.336 * (ctx.canvas.width / 20));
+    const toisov = (lx, ly, lz) => {
+      return lx * Math.sin(PI2) + ly * sin120 + lz * sinNeg120;
+    };
 
-            if (window.innerWidth > window.innerHeight) {
-                xOff += nameElement.getBoundingClientRect().right - txtWidth * 1.5;
-                yOff += nameElement.getBoundingClientRect().y - .72 * txtHeight + txtHeight / 1;
-            } else {
-                xOff += window.innerWidth / 2 + 4 * txtWidth;
-                yOff += window.innerHeight / 2 - .72 * txtHeight / 2 + txtHeight / 2;
-            }
+    // Initialize state variables for the differential equation
+    let x = 1.4, y = -0.336, z = 0;
+    let pastx = x, pasty = y;
+    const a = 1.4;
+    const o = 0.005; // integration step size
+    const p = ctx.canvas.width / 20;
 
-            ctx.strokeStyle = "#D6CFC7";
-            ctx.lineWidth = 3;
+    // Calculate offsets based on the "name" element
+    const nameElement = nameRef.current;
+    let txtWidth = parseFloat(window.getComputedStyle(nameElement).getPropertyValue("width"));
+    let txtHeight = parseFloat(window.getComputedStyle(nameElement).getPropertyValue("height"));
+    txtWidth = txtWidth / 14;
+    let xOff = -1.4 * ctx.canvas.width / 20;
+    let yOff = 0.336 * (ctx.canvas.width / 20);
 
-            var x = 1.4;
-            var y = -.336;
-            var z = 0;
+    if (window.innerWidth > window.innerHeight) {
+      xOff += nameElement.getBoundingClientRect().right - txtWidth * 1.5;
+      yOff += nameElement.getBoundingClientRect().y - 0.72 * txtHeight + txtHeight;
+    } else {
+      xOff += window.innerWidth / 2 + 4 * txtWidth;
+      yOff += window.innerHeight / 2 - 0.72 * txtHeight / 2 + txtHeight / 2;
+    }
 
-            var pastx = x;
-            var pasty = y;
+    ctx.strokeStyle = "#D6CFC7";
+    ctx.lineWidth = 3;
 
-            var a = 1.4;
-            var o = 0.005;
-            var p = ctx.canvas.width / 20;
+    // Increase the number of iterations per frame to speed up the drawing
+    const stepsPerFrame = 5; 
 
-            loop = setInterval(() => {
-                var dx = -a * x - 4 * y - 4 * z - y * y;
-                var dy = -a * y - 4 * z - 4 * x - z * z;
-                var dz = -a * z - 4 * x - 4 * y - x * x;
-                x = x + dx * o;
-                y = y + dy * o;
-                z = z + dz * o;
+    const animate = () => {
+      for (let i = 0; i < stepsPerFrame; i++) {
+        // Differential equation updates
+        const dx = -a * x - 4 * y - 4 * z - y * y;
+        const dy = -a * y - 4 * z - 4 * x - z * z;
+        const dz = -a * z - 4 * x - 4 * y - x * x;
+        x += dx * o;
+        y += dy * o;
+        z += dz * o;
 
-                var u = toisou(x, y, z);
-                var v = toisov(x, y, z);
+        const u = toisou(x, y, z);
+        const v = toisov(x, y, z);
 
-                ctx.beginPath();
-                ctx.quadraticCurveTo(2 * (pastx * p + xOff), 2 * (pasty * p + yOff), 2 * (u * p + xOff), 2 * (v * p + yOff));
-                ctx.stroke();
-                pastx = u;
-                pasty = v;
-            });
-        };
+        // Draw a line segment from the previous point to the current point
+        ctx.beginPath();
+        ctx.moveTo(2 * (pastx * p + xOff), 2 * (pasty * p + yOff));
+        ctx.lineTo(2 * (u * p + xOff), 2 * (v * p + yOff));
+        ctx.stroke();
 
-        const degrees_to_radians = (degrees) => {
-            var pi = Math.PI;
-            return degrees * (pi / 180);
-        }
+        pastx = u;
+        pasty = v;
+      }
+      animationFrameId = requestAnimationFrame(animate);
+    };
 
-        const toisou = (lx, ly, lz) => {
-            var u = lx * Math.cos(2 * Math.PI) + ly * Math.cos(2 * Math.PI + degrees_to_radians(120)) + lz * Math.cos(2 * Math.PI - degrees_to_radians(120));
-            return u;
-        }
+    animate();
 
-        const toisov = (lx, ly, lz) => {
-            var v = lx * Math.sin(2 * Math.PI) + ly * Math.sin(2 * Math.PI + degrees_to_radians(120)) + lz * Math.sin(2 * Math.PI - degrees_to_radians(120));
-            return v;
-        }
+    window.onresize = () => {
+      cancelAnimationFrame(animationFrameId);
+      // Optionally, reinitialize your canvas settings here
+    };
 
-        draw();
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
 
-        window.onresize = () => {
-            window.clearInterval(loop);
-            draw();
-        }
-
-        return () => {
-            window.clearInterval(loop);
-        };
-    }, []);
-
-    return (
-        <m.div
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{duration: 1, ease: 'easeInOut'}}
-        >
-            <canvas id="canvas" ref={canvasRef}></canvas>
-            <div className="name" ref={nameRef}>Dheeraj Reddy</div>
-            <div className='my_links'>
-                <a href="https://www.linkedin.com/in/dheeraj2002reddy/" target="_blank" rel="noopener noreferrer">
-                  <LinkedInIcon />
-                </a>
-                <a href="https://github.com/reddheeraj" target="_blank" rel="noopener noreferrer">
-                  <GitHubIcon />
-                </a>
-                <a href="https://www.instagram.com/red.dheeraj/" target="_blank" rel="noreferrer">
-                  <InstagramIcon />
-                </a>
-                <a href="mailto:meetdheerajreddy@gmail.com">
-                  <Mail />
-                </a>
-              </div>
-        </m.div>
-    );
+  return (
+    <m.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
+    >
+      <canvas id="canvas" ref={canvasRef}></canvas>
+      <div className="name" ref={nameRef}>Dheeraj Reddy</div>
+      <div className='my_links'>
+        <a href="https://www.linkedin.com/in/dheeraj2002reddy/" target="_blank" rel="noopener noreferrer">
+          <LinkedInIcon />
+        </a>
+        <a href="https://github.com/reddheeraj" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon />
+        </a>
+        <a href="https://www.instagram.com/red.dheeraj/" target="_blank" rel="noreferrer">
+          <InstagramIcon />
+        </a>
+        <a href="mailto:meetdheerajreddy@gmail.com">
+          <Mail />
+        </a>
+      </div>
+    </m.div>
+  );
 };
 
 export default CanvasAnimation;
