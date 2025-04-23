@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioweb/static/css/main.c68bb9c4.css",
-    "main.js": "/portfolioweb/static/js/main.131fccf7.js",
+    "main.js": "/portfolioweb/static/js/main.871411bd.js",
     "static/js/787.2af39c6f.chunk.js": "/portfolioweb/static/js/787.2af39c6f.chunk.js",
     "static/media/geneticalgo.png": "/portfolioweb/static/media/geneticalgo.624c544a4c470b779c80.png",
     "static/media/InstaPolitics.png": "/portfolioweb/static/media/InstaPolitics.8401588cb63892030e9f.png",
@@ -17,11 +17,11 @@
     "static/media/Dnew.png": "/portfolioweb/static/media/Dnew.b2f51d7389f980ae2ad1.png",
     "index.html": "/portfolioweb/index.html",
     "main.c68bb9c4.css.map": "/portfolioweb/static/css/main.c68bb9c4.css.map",
-    "main.131fccf7.js.map": "/portfolioweb/static/js/main.131fccf7.js.map",
+    "main.871411bd.js.map": "/portfolioweb/static/js/main.871411bd.js.map",
     "787.2af39c6f.chunk.js.map": "/portfolioweb/static/js/787.2af39c6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c68bb9c4.css",
-    "static/js/main.131fccf7.js"
+    "static/js/main.871411bd.js"
   ]
 }
