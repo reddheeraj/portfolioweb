@@ -33,12 +33,13 @@ function Experience() {
         icon={<SchoolIcon />}
         >
           <h2 className='vertical-timeline-element-title'>
-            Nitte Meenakshi Institute of Technology, Vishweshwaraya Technological University, Bangalore, India
+            NMIT, Vishweshwaraya Technological University, Bangalore, India
           </h2>
           <h2 className='vertical-timeline-element-subtitle'>
-            Bachelor of Engineering
+            Bachelor of Engineering, Information Science
           </h2>
-          <p>Information Science</p>
+          {/* <p>CGPA: 9.22/10</p> */}
+          <p>6th Rank in Engineering, 2024</p>
           <p className='vertical-timeline-element-subtitle'>GPA: 9.22/10</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -69,8 +70,7 @@ function Experience() {
             <b>Data Science Intern</b>
           </p>
           <ul>
-          <li> Wrote a pipeline in python to automate video processing and object detection, reducing the initial processing time by <b>50%</b>.</li>
-          <li>Collaborated with Data team in developing solutions to improve customer experience and to guide business decision making.</li>
+          <li> Automated video processing and object detection, reducing the initial processing time by <b>50%</b>.</li>
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -99,9 +99,11 @@ function Experience() {
             Texas A&M University, Texas, USA
           </h2>
           <h2 className='vertical-timeline-element-subtitle'>
-            Master of Science
+            Master of Science, Data Science
           </h2>
-          <p>Data Science</p>
+          <p>GPA: 4.0/4.0</p>
+          <p>Travel grant Award, 2024</p>
+          <p>Graduate Assistantship, 2025</p>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
@@ -127,7 +129,20 @@ function Experience() {
             College of Performance, Visualization and Fine Arts, Texas A&M University, Texas, USA
           </h2>
           <p>Graduate Assistant Researcher</p>
-          <i>Working on multiple funded projects.</i>
+          <i>Working on multiple funded projects with focus on LLMs, Agents and RAGs.</i>
+          <p className='vertical-timeline-element-subtitle'></p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement 
+        className='vertical-timeline-element--work'
+        date='Incoming June 2025'
+        iconStyle={{ background: '#000', color: '#fff' }}
+        icon={<WorkIcon />}
+        >
+          <h2 className='vertical-timeline-element-title'>
+            Amazon, Bellevue, WA, USA
+          </h2>
+          <p>Data Science Intern</p>
+          <i>Incoming Data Science Intern in the Amazon Worldwide Fulfillment Design and Engineering Team for Summer 2025</i>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
       </VerticalTimeline>

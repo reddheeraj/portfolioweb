@@ -8,8 +8,26 @@ import geneticalgo from '../assets/geneticalgo.png'
 import lorebubbl from '../assets/lorebubbl.png'
 import architecture from '../assets/architecture.png'
 import statefulagent from '../assets/statefulagent.png'
+import InstaPolitics from '../assets/InstaPolitics.png'
+import DrQuick from '../assets/dr quick.png'
 
 export const projectList = [
+    {
+        name: "Dr. Quick",
+        image: DrQuick,
+        description: "Dr. Quick is an AI-Powered Patient Intake System. This project, developed for the Build4Good 2025 Hackathon, aims to streamline the patient intake process in hospitals by leveraging an AI-powered voice bot. It provides a conversational interface for patients arriving to describe their health concerns. The AI bot conducts a structured question-and-answer session, maintains a history of the conversation, and generates a concise summary. This summary, along with the patient's information and visit date, is then automatically added to a Notion database accessible by the doctor.",
+        tech: "Python, OpenCV, Deepgram, AWS S3, Notion API, Groq",
+        github: "https://github.com/reddheeraj/Responder",
+        live: "https://devpost.com/software/dr-quick"
+    },
+    {
+        name: "Game of Thrones",
+        image: InstaPolitics,
+        description: "Study and simulate the power of influence via Social Media",
+        tech: "React, Vite, Python, Langchain, Groq, Gemini, Ollama, ChromaDB",
+        github: "https://github.com/reddheeraj/GameOfThrones",
+        live: "https://devpost.com/software/instapolitics"
+    },
     {
         name: "Stateful Agent",
         image: statefulagent,

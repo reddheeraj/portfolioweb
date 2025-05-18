@@ -83,6 +83,15 @@ function Navbar() {
                     <p>CONTACT ME</p>
                 </div>
             </Link>
+            <Link to="blogs" spy={true} smooth={true} offset={-80} duration={100}>
+                {/* <p><FaEnvelope size="30px" /></p> */}
+                <div style={{"cursor":"pointer"}} onClick={() => {
+                    changeID()
+                    navigate('/blogs')
+                    }}>
+                    <p>BLOGS</p>
+                </div>
+            </Link>
         </div>
     </div>
   );

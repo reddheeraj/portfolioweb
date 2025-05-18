@@ -114,15 +114,15 @@ const CanvasAnimation = () => {
       <canvas id="canvas" ref={canvasRef}></canvas>
       <div className="name" ref={nameRef}>Dheeraj Reddy</div>
       <div className='my_links'>
-        <a href="https://www.linkedin.com/in/dheeraj2002reddy/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/dheerajmudireddy" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
         </a>
         <a href="https://github.com/reddheeraj" target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
         </a>
-        <a href="https://www.instagram.com/red.dheeraj/" target="_blank" rel="noreferrer">
+        {/* <a href="https://www.instagram.com/red.dheeraj/" target="_blank" rel="noreferrer">
           <InstagramIcon />
-        </a>
+        </a> */}
         <a href="mailto:meetdheerajreddy@gmail.com">
           <Mail />
         </a>
