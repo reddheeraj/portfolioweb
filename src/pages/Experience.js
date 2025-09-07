@@ -102,7 +102,7 @@ function Experience() {
             Master of Science, Data Science
           </h2>
           <p>GPA: 4.0/4.0</p>
-          <p>Travel grant Award, 2024</p>
+          <p>Travel grant Award, 2024, 2025</p>
           <p>Graduate Assistantship, 2025</p>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
@@ -130,19 +130,27 @@ function Experience() {
           </h2>
           <p>Graduate Assistant Researcher</p>
           <i>Working on multiple funded projects with focus on LLMs, Agents and RAGs.</i>
+          <li>Research Paper on "Thinktank: A framework for generalizing domain specific agents" on Arxiv.</li>
+          <li>RAG systems for merging knowledge from multiple sources.</li>
+          <li>MQTT for large scale IoT data processing.</li>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
         className='vertical-timeline-element--work'
-        date='Incoming June 2025'
+        date='May 2025 - August 2025'
         iconStyle={{ background: '#000', color: '#fff' }}
         icon={<WorkIcon />}
         >
           <h2 className='vertical-timeline-element-title'>
             Amazon, Bellevue, WA, USA
           </h2>
-          <p>Data Science Intern</p>
-          <i>Incoming Data Science Intern in the Amazon Worldwide Fulfillment Design and Engineering Team for Summer 2025</i>
+          <p>
+            <b>Data Scientist, Intern</b>
+          </p>
+          <ul>
+          <li>Built a Computer Vision utility for advanced warehouse analytics.</li>
+          <li>Researched LLM agent-driven simulations with fatigue modelling in warehouse operations (Paper accepted to AFSS 2025).</li>
+          </ul>
           <p className='vertical-timeline-element-subtitle'></p>
         </VerticalTimelineElement>
       </VerticalTimeline>
