@@ -1,6 +1,6 @@
 .home {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 5em);
     position: relative;
     overflow: hidden;
 }
@@ -21,6 +21,7 @@
     text-align: center; /* Ensure text is centered */
     padding: 0 20px; /* Add padding for small screens */
     animation: hover_up_and_down 1.5s infinite;
+    z-index: 1;
 }
 
 @keyframes hover_up_and_down {
@@ -48,6 +49,7 @@
     top: 40%; /* Adjusted to make it responsive */
     flex-wrap: wrap; /* Ensure the links wrap on smaller screens */
     padding: 0 20px; /* Add padding for small screens */
+    z-index: 1;
 }
 
 @keyframes slide-up {

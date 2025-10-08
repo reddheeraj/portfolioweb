@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import { Link } from 'react-scroll'
+import { NavLink, Link } from 'react-router-dom'
 import '../styles/Navbar.css'
 import ReorderIcon from '@material-ui/icons/Reorder';
 import Logo from '../components/Logo';
@@ -18,18 +18,18 @@ function Navbar() {
 
    
 
-    function changeID() {
-        let navbar = document.getElementsByClassName('navbar');
-        navbar[0].id = 'close';
+    function collapseNav() {
         setExpandedbar(false);
     }
 
     function rotatenavicon() {
-        let navicon = document.getElementsByClassName('navicon');
-        navicon[0].style.animation = 'rotate 0.8s ease-in-out';
-        setTimeout(() => {
-            navicon[0].style.animation = 'none';
-        }, 800);
+        const navicon = document.getElementsByClassName('navicon');
+        if (navicon && navicon[0]) {
+            navicon[0].style.animation = 'rotate 0.8s ease-in-out';
+            setTimeout(() => {
+                navicon[0].style.animation = 'none';
+            }, 800);
+        }
     }
 
   return (
@@ -47,51 +47,21 @@ function Navbar() {
             </button>
         </div>
         <div className='links'>
-            {/* <Logo /> */}
-            <Link to='home'> 
-                <div style={{"cursor":"pointer"}} onClick={() => {
-                    changeID()
-                    navigate('/portfolioweb')
-                    }}> 
-                    <p>HOME</p>
-                </div>
-            </Link>
-            <Link to="projects" spy={true} smooth={true} offset={-80} duration={100}>
-                {/* <p><FaProjectDiagram size="30px"/></p>  */}
-                 <div style={{"cursor":"pointer"}} onClick={() => {
-                    changeID()
-                    navigate('/projects')
-                    }}>
-                    <p>PROJECTS</p>
-                </div>
-            </Link>
-            <Link to="experience" spy={true} smooth={true} offset={-80} duration={100}>
-                {/* <p><FaBriefcase size="30px"/></p> */}
-                <div style={{"cursor":"pointer"}} onClick={() => {
-                    changeID()
-                    navigate('/experience')
-                    }}>
-                    <p>EXPERIENCE</p>
-                </div>
-            </Link>
-            <Link to="contact" spy={true} smooth={true} offset={-80} duration={100}>
-                {/* <p><FaEnvelope size="30px" /></p> */}
-                <div style={{"cursor":"pointer"}} onClick={() => {
-                    changeID()
-                    navigate('/contact')
-                    }}>
-                    <p>CONTACT ME</p>
-                </div>
-            </Link>
-            <Link to="blogs" spy={true} smooth={true} offset={-80} duration={100}>
-                {/* <p><FaEnvelope size="30px" /></p> */}
-                <div style={{"cursor":"pointer"}} onClick={() => {
-                    changeID()
-                    navigate('/blogs')
-                    }}>
-                    <p>BLOGS</p>
-                </div>
-            </Link>
+            <div style={{"cursor":"pointer"}} onClick={() => { collapseNav(); navigate('/portfolioweb'); }}>
+                <p>HOME</p>
+            </div>
+            <div style={{"cursor":"pointer"}} onClick={() => { collapseNav(); navigate('/projects'); }}>
+                <p>PROJECTS</p>
+            </div>
+            <div style={{"cursor":"pointer"}} onClick={() => { collapseNav(); navigate('/experience'); }}>
+                <p>EXPERIENCE</p>
+            </div>
+            <div style={{"cursor":"pointer"}} onClick={() => { collapseNav(); navigate('/contact'); }}>
+                <p>CONTACT ME</p>
+            </div>
+            <div style={{"cursor":"pointer"}} onClick={() => { collapseNav(); navigate('/blogs'); }}>
+                <p>BLOGS</p>
+            </div>
         </div>
     </div>
   );

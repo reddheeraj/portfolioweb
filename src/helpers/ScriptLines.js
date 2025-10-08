@@ -21,7 +21,12 @@ const CanvasAnimation = () => {
     canvas.width = window.innerWidth * 2.5;
     canvas.height = window.innerHeight * 2.5;
     canvas.style.width = window.innerWidth + "px";
-    canvas.style.height = (window.innerHeight - 100) + "px";
+    canvas.style.height = window.innerHeight + "px";
+    canvas.style.position = 'fixed';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.zIndex = '0';
+    canvas.style.pointerEvents = 'none';
 
     // Precompute constants for conversion functions
     const PI2 = 2 * Math.PI;
@@ -66,7 +71,7 @@ const CanvasAnimation = () => {
     ctx.lineWidth = 3;
 
     // Increase the number of iterations per frame to speed up the drawing
-    const stepsPerFrame = 5; 
+    const stepsPerFrame = 10; 
 
     const animate = () => {
       for (let i = 0; i < stepsPerFrame; i++) {
