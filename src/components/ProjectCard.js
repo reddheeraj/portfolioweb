@@ -1,16 +1,16 @@
 // ProjectCard.js
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../styles/ProjectCard.css'; // Import the CSS file for styling
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 const ProjectCard = ({ project }) => {
-    useEffect(() => {
-        Aos.init({disable: 'mobile'});
-          Aos.init({duration: 1000});
-      }, []);
+    // useEffect(() => {
+    //     Aos.init({disable: 'mobile'});
+    //       Aos.init({duration: 1000});
+    //   }, []);
     return (
-        <div data-aos="fade-up" className="project-card">
-            <img src={project.image} alt={project.name} className="project-image" />
+        <div className="project-card" /* data-aos="fade-up" */>
+            {project.image && <img src={project.image} alt={project.name} className="project-image" />}
             <div className="project-details">
                 <h2>{project.name}</h2>
                 <p className='proj_desc'>{project.description}</p>
