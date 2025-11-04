@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolioweb/static/css/main.e532ede3.css",
-    "main.js": "/portfolioweb/static/js/main.ed5c1b48.js",
+    "main.css": "/portfolioweb/static/css/main.a582823d.css",
+    "main.js": "/portfolioweb/static/js/main.6c0dfa21.js",
     "static/js/787.2af39c6f.chunk.js": "/portfolioweb/static/js/787.2af39c6f.chunk.js",
     "static/media/Me at Mahindra Worli Office 2.jpeg": "/portfolioweb/static/media/Me at Mahindra Worli Office 2.e373410a7357766d657d.jpeg",
+    "static/media/deepgram_mcp_icon.png": "/portfolioweb/static/media/deepgram_mcp_icon.dec9308f13368e63e882.png",
+    "static/media/phoenix_dashboard.png": "/portfolioweb/static/media/phoenix_dashboard.157b9cbf147c6c9a7fef.png",
     "static/media/geneticalgo.png": "/portfolioweb/static/media/geneticalgo.624c544a4c470b779c80.png",
     "static/media/InstaPolitics.png": "/portfolioweb/static/media/InstaPolitics.8401588cb63892030e9f.png",
     "static/media/dr quick.png": "/portfolioweb/static/media/dr quick.f16c7c1aafcb66f14b92.png",
@@ -11,19 +13,21 @@
     "static/media/architecture.png": "/portfolioweb/static/media/architecture.c01788f3e84f48f82c83.png",
     "static/media/statefulagent.png": "/portfolioweb/static/media/statefulagent.6b3ac5ab7ba8e78a1e6f.png",
     "static/media/pathvis.png": "/portfolioweb/static/media/pathvis.bf576123696a1d708e37.png",
+    "static/media/pokemonred_image.jpg": "/portfolioweb/static/media/pokemonred_image.88ada543b8ead6162c51.jpg",
     "static/media/chatapp.png": "/portfolioweb/static/media/chatapp.b834e874ace1c96a114a.png",
     "static/media/suge.png": "/portfolioweb/static/media/suge.0de8587788e0e1611ef4.png",
+    "static/media/thinktank_pic.png": "/portfolioweb/static/media/thinktank_pic.fe8a6ad0034a0cf0723f.png",
     "static/media/sortvis.png": "/portfolioweb/static/media/sortvis.9b747c6b97a1acf1b718.png",
     "static/media/lorebubbl.png": "/portfolioweb/static/media/lorebubbl.a2bbc77b19e4b0cc10a2.png",
     "static/media/sentiment.png": "/portfolioweb/static/media/sentiment.2dc703fc4ef83ce7f8df.png",
     "static/media/Dnew.png": "/portfolioweb/static/media/Dnew.b2f51d7389f980ae2ad1.png",
     "index.html": "/portfolioweb/index.html",
-    "main.e532ede3.css.map": "/portfolioweb/static/css/main.e532ede3.css.map",
-    "main.ed5c1b48.js.map": "/portfolioweb/static/js/main.ed5c1b48.js.map",
+    "main.a582823d.css.map": "/portfolioweb/static/css/main.a582823d.css.map",
+    "main.6c0dfa21.js.map": "/portfolioweb/static/js/main.6c0dfa21.js.map",
     "787.2af39c6f.chunk.js.map": "/portfolioweb/static/js/787.2af39c6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e532ede3.css",
-    "static/js/main.ed5c1b48.js"
+    "static/css/main.a582823d.css",
+    "static/js/main.6c0dfa21.js"
   ]
 }
