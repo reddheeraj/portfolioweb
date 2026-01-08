@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioweb/static/css/main.a582823d.css",
-    "main.js": "/portfolioweb/static/js/main.6c0dfa21.js",
+    "main.css": "/portfolioweb/static/css/main.7c36260b.css",
+    "main.js": "/portfolioweb/static/js/main.cdd57059.js",
     "static/js/787.2af39c6f.chunk.js": "/portfolioweb/static/js/787.2af39c6f.chunk.js",
     "static/media/Me at Mahindra Worli Office 2.jpeg": "/portfolioweb/static/media/Me at Mahindra Worli Office 2.e373410a7357766d657d.jpeg",
     "static/media/deepgram_mcp_icon.png": "/portfolioweb/static/media/deepgram_mcp_icon.dec9308f13368e63e882.png",
@@ -22,12 +22,12 @@
     "static/media/sentiment.png": "/portfolioweb/static/media/sentiment.2dc703fc4ef83ce7f8df.png",
     "static/media/Dnew.png": "/portfolioweb/static/media/Dnew.b2f51d7389f980ae2ad1.png",
     "index.html": "/portfolioweb/index.html",
-    "main.a582823d.css.map": "/portfolioweb/static/css/main.a582823d.css.map",
-    "main.6c0dfa21.js.map": "/portfolioweb/static/js/main.6c0dfa21.js.map",
+    "main.7c36260b.css.map": "/portfolioweb/static/css/main.7c36260b.css.map",
+    "main.cdd57059.js.map": "/portfolioweb/static/js/main.cdd57059.js.map",
     "787.2af39c6f.chunk.js.map": "/portfolioweb/static/js/787.2af39c6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a582823d.css",
-    "static/js/main.6c0dfa21.js"
+    "static/css/main.7c36260b.css",
+    "static/js/main.cdd57059.js"
   ]
 }
